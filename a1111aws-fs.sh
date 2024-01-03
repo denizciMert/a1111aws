@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "################################################################"
-echo "Kurulum başliyor!"
+echo "Kurulum basliyor!"
 echo "################################################################"
 echo ""
 # Sistem güncellemeleri
@@ -87,12 +87,14 @@ echo "Extension - Reactor"
 echo "################################################################"
 echo ""
 git clone https://github.com/Gourieff/sd-webui-reactor
+
 echo ""
 echo "################################################################"
 echo "Extension - Controlnet"
 echo "################################################################"
 echo ""
 git clone https://github.com/Mikubill/sd-webui-controlnet
+
 echo ""
 echo "################################################################"
 echo "Extension - Roop"
@@ -122,11 +124,11 @@ echo "################################################################"
 echo ""
 
 sudo chmod +x webui.sh
+
 echo ""
 echo "################################################################"
 echo "Kurulum tamamlandi!"
 echo "################################################################"
-echo ""
 echo ""
 echo "################################################################"
 echo "Ilk baslatma zaman alabilir!"
