@@ -1,5 +1,6 @@
 #!/bin/bash
 
+echo "################################################################"
 echo "Kurulum başliyor!"
 echo "################################################################"
 
@@ -10,6 +11,7 @@ sudo yum update -y
 sudo yum install -y git wget
 
 # Gerekli kütüphanelerin kurulumu
+echo "################################################################"
 echo "Gereksinimler kuruluyor."
 echo "################################################################"
 
@@ -20,12 +22,14 @@ mkdir -p ~/A1111
 cd ~/A1111
 
 # Automatic1111 reposunu klonlama
+echo "################################################################"
 echo "WebUI indiriliyor."
 echo "################################################################"
 
 git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
 
 # Modellerin ve eklentilerin indirilmesi
+echo "################################################################"
 echo "Modeller indiriliyor."
 echo "################################################################"
 
@@ -35,6 +39,7 @@ wget https://civitai.com/api/download/models/143906 --content-disposition
 
 cd ..
 
+echo "################################################################"
 echo "Upscaler indiriliyor."
 echo "################################################################"
 
@@ -45,6 +50,7 @@ wget https://huggingface.co/lokCX/4x-Ultrasharp/resolve/main/4x-UltraSharp.pth
 cd ../..
 
 # WebUI kullanıcı yapılandırması
+echo "################################################################"
 echo "WebUI User Yapılandırması"
 echo "################################################################"
 
@@ -54,14 +60,16 @@ read -sp "Sifreyi giriniz: " password
 sed -i "s/^#export COMMANDLINE_ARGS=.*/export COMMANDLINE_ARGS=\"--share --gradio-auth $username:$password\"/" webui-user.sh
 
 # Çalıştırma izinlerinin yapılandırması
+echo "################################################################"
 echo "Calıstırma Izinleri Yapilandiriliyor."
 echo "################################################################"
 
 sudo chmod +x webui.sh
 
+echo "################################################################"
 echo "Kurulum tamamlandi!"
 echo "################################################################"
-
+echo "################################################################"
 echo "Ilk baslatma zaman alabilir!"
 echo "################################################################"
 
