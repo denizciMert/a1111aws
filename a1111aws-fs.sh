@@ -102,8 +102,8 @@ echo ""
 echo "################################################################"
 echo "LoRA - ReaLora"
 echo "################################################################"
-echo "Atlandi..."
-#wget https://civitai.com/api/download/models/151465 --content-disposition
+echo ""
+wget "https://www.dropbox.com/scl/fi/j4azno6nyj66clx48ggw0/ReaLora.safetensors?rlkey=sfvcfhwhmf5q7ltu3n8cmmgbj&dl=1" -O ReaLora.safetensors
 
 echo ""
 echo "################################################################"
@@ -195,8 +195,8 @@ echo ""
 echo "################################################################"
 echo "Embedding - Love Potion"
 echo "################################################################"
-echo "Atlandi..."
-#wget https://civitai.com/api/download/models/219575 --content-disposition
+echo ""
+wget "https://www.dropbox.com/scl/fi/uldhg7so8prjjvgzkihb4/Style-Grabby.pt?rlkey=ibmbczqwj5t4lfw3904hgetsu&dl=1" -O Style-Grabby.pt
 
 echo ""
 echo "################################################################"
